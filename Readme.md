@@ -1,6 +1,6 @@
-# Openmouse Extension
+# OPENMOUSE Extension
 
-learn more about the [openmouse]('https://github.com/rockitbaby/openmouse').
+learn more about [OPENMOUSE](https://github.com/rockitbaby/openmouse).
 
 ---
 
