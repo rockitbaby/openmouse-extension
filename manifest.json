@@ -1,0 +1,25 @@
+{
+  "name": "OpenMouse",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "OpenMouse, a browser experience for stage performances",
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "ftp://*/*", "file://*/*"],
+      "js": ["lib/jquery.min.js", "settings.js", "injection.js", "bigtext.js"],
+      "css": ["openmouse.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "tabs"
+    ,"<all_urls>"
+    ,"background"
+    ,"http://localhost/*"
+  ],
+  "content_security_policy": "script-src 'self' http://localhost; object-src 'self'; content-src http://localhost"
+}
